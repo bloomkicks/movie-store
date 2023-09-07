@@ -1,0 +1,22 @@
+.slider {
+  position: relative;
+}
+
+.slider > button {
+  box-sizing: content-box;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  padding: 8px;
+  width: 11px;
+  height: 32px;
+  transform: translateY(-60%);
+}
+
+.nextBtn {
+  right: -10px;
+}
+
+.prevBtn {
+  left: -10px;
+}

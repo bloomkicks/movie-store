@@ -1,7 +1,8 @@
 "use client";
+import Header from "@/components/layout/Header";
 import { QueryClient, QueryClientProvider } from "react-query";
 
-import "./globals.css";
+import "./globals.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -22,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <QueryClientProvider client={queryClient}>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <Header />
+          {children}
+        </body>
       </QueryClientProvider>
     </html>
   );

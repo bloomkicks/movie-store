@@ -1,3 +1,9 @@
+import MovieList from "@/components/movie-list/MovieList";
+
 export default function Home() {
-  return <h1>I work!</h1>;
+  return (
+    <main>
+      <MovieList />
+    </main>
+  );
 }

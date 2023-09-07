@@ -1,0 +1,16 @@
+.moreIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  width: fit-content;
+}
+
+.moreIcon > span {
+  display: block;
+  background-color: black;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+}
