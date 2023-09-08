@@ -1,0 +1,39 @@
+.container {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 320px;
+}
+
+.container > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container > div > select {
+  background-color: #e7e8e9;
+  border-right: #e7e8e9 solid 6px;
+  padding: 8px 12px;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.container > div > img {
+  margin-right: 14px;
+}
+
+.sortList > img {
+  transform: translateY(-1px);
+}
+
+@media (min-width: 512px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 46px;
+    max-width: none;
+  }
+}

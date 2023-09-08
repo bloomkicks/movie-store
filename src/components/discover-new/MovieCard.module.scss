@@ -1,17 +1,19 @@
 .movieCard {
-  width: 90%;
-  max-width: 300px;
+  width: 300px;
+  display: block;
   position: relative;
-  padding-bottom: 32px;
+  padding-bottom: 34px;
+  text-decoration: none;
+  color: black;
 }
 
 .movieCard.detailed {
-  padding-bottom: 44px;
+  padding-bottom: 46px;
 }
 
 .movieCard > img {
   width: 100%;
-  height: 440px;
+  height: 425px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   object-fit: cover;
@@ -46,4 +48,13 @@
   position: absolute;
   left: 20px;
   bottom: 22px;
+}
+
+@media (min-width: 512px) {
+  .movieCard {
+    width: 350px;
+  }
+  .movieCard > img {
+    height: 500px;
+  }
 }

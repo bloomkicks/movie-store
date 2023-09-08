@@ -1,0 +1,16 @@
+.discoverNew {
+  padding: 36px 32px;
+  max-width: 412px;
+  margin: 0 auto;
+}
+
+.discoverNew > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .discoverNew {
+    max-width: 1420px;
+  }
+}

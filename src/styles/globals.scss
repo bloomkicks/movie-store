@@ -34,3 +34,13 @@ select {
   background-color: transparent;
   border-radius: 0;
 }
+
+@media (min-width: 1024px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}

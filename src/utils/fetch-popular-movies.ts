@@ -1,6 +1,6 @@
-async function fetchMovies() {
+async function fetchPopularMovies() {
   const moviesRes = await fetch(
-    `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.API_KEY}`
+    `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`
   );
   const genresRes = await fetch(
     `https://api.themoviedb.org/3/genre/movie/list?api_key=${process.env.API_KEY}`
@@ -11,4 +11,4 @@ async function fetchMovies() {
   return { movies: moviesData.results, genres: genresData.genres };
 }
 
-export default fetchMovies;
+export default fetchPopularMovies;
