@@ -15,6 +15,7 @@ const SortFilter = ({
     const sortBy = e.target.value;
     sortHandler(sortBy);
   }
+
   return (
     <div className={classes.container}>
       <div className={classes.sortList}>

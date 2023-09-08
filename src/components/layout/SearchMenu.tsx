@@ -59,7 +59,7 @@ const SearchMenu = ({ open }: { open: boolean }) => {
       >
         <input
           type="text"
-          placeholder="Search for movie..."
+          placeholder="Search for a movie..."
           onChange={changeHandler()}
           ref={inputRef}
         />

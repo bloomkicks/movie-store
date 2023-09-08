@@ -6,10 +6,10 @@ async function fetchMovieDetails({
   queryKey: string[];
 }) {
   const detailsRes = await fetch(
-    `https://api.themoviedb.org/3/movie/${queryKey[1]}?api_key=${process.env.API_KEY}`
+    `https://api.themoviedb.org/3/movie/${queryKey[1]}?api_key=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const creditsRes = await fetch(
-    `https://api.themoviedb.org/3/movie/${queryKey[1]}/credits?api_key=${process.env.API_KEY}`
+    `https://api.themoviedb.org/3/movie/${queryKey[1]}/credits?api_key=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const details = await detailsRes.json();
   const credits = await creditsRes.json();

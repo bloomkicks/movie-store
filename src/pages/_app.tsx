@@ -1,4 +1,4 @@
-import "../styles/globals.scss";
+import "../globals.scss";
 
 import Head from "next/head";
 import store from "@/store";
@@ -7,7 +7,14 @@ import { Provider } from "react-redux";
 import Header from "@/components/layout/Header";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { AppProps } from "next/app";
+import { Inter } from "next/font/google";
+
 const queryClient = new QueryClient();
+const inter = Inter({
+  weight: ["400", "500", "700"],
+  style: "normal",
+  subsets: ["latin"],
+});
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -25,8 +32,17 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
       <QueryClientProvider client={queryClient}>
         <Provider store={store}>
+          <style jsx global>
+            {`
+              html,
+              body {
+                font-family: ${inter.style.fontFamily}, Roboto,
+                  system-ui, -apple-system, sans-serif;
+              }
+            `}
+          </style>
           <Header />
-          <Component {...pageProps} />
+          <Component {...pageProps} className={inter.className} />
         </Provider>
       </QueryClientProvider>
     </>

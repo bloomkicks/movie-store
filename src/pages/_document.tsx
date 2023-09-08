@@ -1,6 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-// const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,

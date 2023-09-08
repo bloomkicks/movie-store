@@ -7,7 +7,7 @@ function transformMovieObject(
   cast?: any[]
 ): MovieSummary | MovieDetails {
   return {
-    posterSrc: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
+    posterSrc: `https://image.tmdb.org/t/p/w400${movie.poster_path}`,
     title: movie.title,
     year: movie.release_date.split("-")[0],
     id: movie.id,
